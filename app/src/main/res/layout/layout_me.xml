@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        android:background="#fff"
+        android:gravity="center_horizontal|center_vertical"  >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_first_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/display_picture"
+                    android:src="@drawable/me" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_toRightOf="@+id/display_picture"
+                    android:text="小李"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="我的资料"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_last_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon2"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon2"
+                    android:text="动态"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_single_item"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon3"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon3"
+                    android:text="个性签名"
+                    android:id="@+id/Personality_signature"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="我就是我,不一样的烟火"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:id="@+id/Personality_signature_text"
+                    android:layout_toRightOf="@+id/Personality_signature"
+                    android:layout_alignTop="@+id/Personality_signature"
+                    android:layout_toLeftOf="@+id/submenu"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:id="@+id/submenu"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/preference_first_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon4"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon4"
+                    android:text="消息与通知"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon5"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon5"
+                    android:text="帮助"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_last_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon6"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon6"
+                    android:text="关于软件"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/preference_single_item"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:id="@+id/icon7"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_toRightOf="@+id/icon7"
+                    android:text="退出"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

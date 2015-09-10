@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/message_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/tab_mes"
+            android:background="@drawable/ic_preference_single_normal"/>
+        <TextView
+            android:id="@+id/contacts_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_contacts"
+            android:gravity="center"
+            android:background="@drawable/ic_preference_single_normal"
+            />
+        <TextView
+            android:id="@+id/add_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ic_preference_single_normal"
+            android:text="@string/tab_add"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon"/>
+    </LinearLayout>
+        <ExpandableListView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/expandListView"
+            android:drawSelectorOnTop="false"
+            android:layout_weight="1">
+        </ExpandableListView>
+</LinearLayout>

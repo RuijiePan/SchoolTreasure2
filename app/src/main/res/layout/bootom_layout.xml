@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tab_message"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_message_img"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_message"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tab_address"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_address_img"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_contacts"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tab_share"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_share_img"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_share"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tab_me"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_me_img"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/tab_me"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
